@@ -9,10 +9,16 @@ docker build -t nginx .
 docker run --rm -p 8080:80 nginx
 ```
 
+ou:
+
+```bash
+docker pull ghcr.io/macetada/nginx:main
+docker run --rm -p 8080:80 ghcr.io/macetada/nginx:main
+```
+
 > Este procedimento deve ser feito numa máquina servidora ou num cluster.
 
 ## Pendências
 
-- [ ] Workflow
 - [ ] Acesso a I/O
 - [ ] Acesso a banco de dados
